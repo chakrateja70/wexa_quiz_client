@@ -1,0 +1,139 @@
+/* Gradient background for a modern look */
+.quiz-container {
+  text-align: center;
+  padding: 20px;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Title styling */
+.quiz-title {
+  font-size: 2.5rem;
+  color: white;
+  margin-bottom: 20px;
+}
+
+/* Quiz box styling */
+.quiz-box {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 600px;
+  text-align: center;
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Question number */
+.question-number {
+  font-size: 1.2rem;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Question text */
+.quiz-question {
+  font-size: 1.2rem;
+  color: #444;
+  margin: 15px 0;
+}
+
+/* Option button styles */
+.quiz-option {
+  display: block;
+  margin: 10px auto;
+  padding: 12px;
+  width: 100%;
+  max-width: 400px;
+  border: none;
+  border-radius: 6px;
+  background: #f8f9fa;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  font-weight: bold;
+}
+
+.quiz-option:hover {
+  background: #e2e6ea;
+}
+
+/* Correct and incorrect answer styles */
+.correct {
+  background: #28a745 !important;
+  color: white !important;
+}
+
+.incorrect {
+  background: #dc3545 !important;
+  color: white !important;
+}
+
+/* Next Question button */
+.next-question-button {
+  margin-top: 20px;
+  padding: 12px 24px;
+  font-size: 16px;
+  color: white;
+  background: linear-gradient(90deg, #28a745, #218838);
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.next-question-button:hover {
+  background: linear-gradient(90deg, #218838, #1e7e34);
+}
+
+/* Disabled button styling */
+.next-question-button:disabled {
+  background: #a1a1a1;
+  cursor: not-allowed;
+}
+
+/* Quiz completion message */
+.quiz-completed {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+.quiz-completed h1 {
+  font-size: 2rem;
+  color: #333;
+}
+
+.quiz-completed p {
+  font-size: 1.2rem;
+  color: #444;
+}
+
+/* Loading text */
+.loading {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: white;
+}
